@@ -8,8 +8,7 @@ def calculation(a,b):
     return a+b , max(a,b)-min(a,b)
 
 def showEmployee(name, salary=9000):
-    print("Employee", name, "salary is: ", salary)
-
+    print("Employee {} salary is: {}".format(name,salary))
 
 def displayStudent(name, age):
     print("{} is {} years old".format(name,age))
