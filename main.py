@@ -8,7 +8,13 @@ def calculation(a,b):
     return a+b , max(a,b)-min(a,b)
 
 def showEmployee(name, salary=9000):
+    """print name and salary"""
     print("Employee {} salary is: {}".format(name,salary))
+
+def outer_fun(a,b):
+    def addition_fun(a,b):
+        return a+b
+    return addition_fun(a,b) +5
 
 def displayStudent(name, age):
     print("{} is {} years old".format(name,age))
